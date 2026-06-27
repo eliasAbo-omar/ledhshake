@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مطعم لذة شاك | Delicious Shack</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">لذة <span class="accent">شاك</span></div>
+      <button id="openCartBtn" class="cart-nav-btn">
+        سلة الطلبات
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </header>
+
+    <div class="categories-nav">
+      <button class="category-btn active" onclick="scrollToSection('burgers')">
+        البرجر
+      </button>
+      <button class="category-btn" onclick="scrollToSection('bakery')">
+        المعجنات والمخبوزات
+      </button>
+      <button class="category-btn" onclick="scrollToSection('desserts')">
+        الحلويات والكيك
+      </button>
+      <button class="category-btn" onclick="scrollToSection('drinks')">
+        المشرويات
+      </button>
+    </div>
+
+    <div class="menu-container">
+      <section id="burgers">
+        <h2 class="section-title">الوجبات السريعة والبرجر</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet burger, cut in half showcasing juicy beef patty, melted cheese, fresh lettuce, tomatoes, pickles, and sauce dripping temptingly. Cinematic dramatic lighting,.jpg"
+              alt="شاك برجر كلاسيك"
+              class="product-img"
+            />
+            <h3>شاك برجر كلاسيك</h3>
+            <p>
+              شريحة لحم أنجوس مشوية، جبنة شيدر، خس، طماطم، وصلصة شاك السرية.
+            </p>
+            <div class="card-footer">
+              <span class="price">26 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('شاك برجر كلاسيك', 26)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet burger, cut in half showcasing juicy beef patty, melted cheese, fresh lettuce, tomatoes, pickles, and sauce dripping temptingly. Cinematic dramatic lighting,.jpg"
+              alt="كراميل تشيكن برجر"
+              class="product-img"
+            />
+            <h3>كراميل تشيكن برجر</h3>
+            <p>صدر دجاج مقرمش، صلصة باربكيو مدخنة، بصل مكرمل وجبنة سويسرية.</p>
+            <div class="card-footer">
+              <span class="price">24 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('كراميل تشيكن برجر', 24)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet burger, cut in half showcasing juicy beef patty, melted cheese, fresh lettuce, tomatoes, pickles, and sauce dripping temptingly. Cinematic dramatic lighting,.jpg"
+              alt="شاك فرايز بالجبنة"
+              class="product-img"
+            />
+            <h3>شاك فرايز بالجبنة</h3>
+            <p>بطاطس مقرمشة مغطاة بمزيج من الأجبان الذائبة وقطع الهالبينو.</p>
+            <div class="card-footer">
+              <span class="price">14 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('شاك فرايز بالجبنة', 14)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bakery">
+        <h2 class="section-title">المعجنات والمنسوجات الطازجة</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet Shawarma wrap, cut in half showcasing juicy, perfectly grilled chicken_beef layers, melted cheddar cheese, fresh pickles, and garlic sauce dripping temptingl.jpg"
+              alt="صامولي طازج"
+              class="product-img"
+            />
+            <h3>صامولي طازج (7 قطع)</h3>
+            <p>خبز صامولي محضر يومياً من الدقيق الأبيض أو البر الطازج.</p>
+            <div class="card-footer">
+              <span class="price">5 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('صامولي طازج (7 قطع)', 5)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet Shawarma wrap, cut in half showcasing juicy, perfectly grilled chicken_beef layers, melted cheddar cheese, fresh pickles, and garlic sauce dripping temptingl.jpg"
+              alt="مجموعة كرواسون فرنسي فاخر"
+              class="product-img"
+            />
+            <h3>مجموعة كرواسون فرنسي فاخر</h3>
+            <p>
+              محضر بأجود أنواع الزبدة الطبيعية (تشيز كيتوت، نوتيلا، جبن سائل،
+              زعتر).
+            </p>
+            <div class="card-footer">
+              <span class="price">3.5 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('كرواسون فرنسي فاخر', 3.5)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet Shawarma wrap, cut in half showcasing juicy, perfectly grilled chicken_beef layers, melted cheddar cheese, fresh pickles, and garlic sauce dripping temptingl.jpg"
+              alt="شابورة هشّة بالسمسم"
+              class="product-img"
+            />
+            <h3>شابورة هشّة بالسمسم</h3>
+            <p>قطع الشابورة المقرمشة والمحضرة بكل عناية مثالية مع الشاي.</p>
+            <div class="card-footer">
+              <span class="price">7 r.s</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('شابورة هشّة بالسمسم', 7)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet Shawarma wrap, cut in half showcasing juicy, perfectly grilled chicken_beef layers, melted cheddar cheese, fresh pickles, and garlic sauce dripping temptingl.jpg"
+              alt="منقوشة جبنة بالقمحة والزعتر"
+              class="product-img"
+            />
+            <h3>منقوشة جبنة بالقمحة والزعتر</h3>
+            <p>عجينة هشة غنية بالجبن الطازج، الزعتر وزيت الزيتون البكر.</p>
+            <div class="card-footer">
+              <span class="price">9 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('منقوشة جبنة وزعتر', 9)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet Shawarma wrap, cut in half showcasing juicy, perfectly grilled chicken_beef layers, melted cheddar cheese, fresh pickles, and garlic sauce dripping temptingl.jpg"
+              alt="منقوشة لحم بدبس الرمان"
+              class="product-img"
+            />
+            <h3>منقوشة لحم بدبس الرمان</h3>
+            <p>
+              لحم مفروم متبل بخلطتنا الخاصة مع دبس الرمان الحامض حلو مخبوزة على
+              اللهب.
+            </p>
+            <div class="card-footer">
+              <span class="price">9 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('منقوشة لحم بدبس الرمان', 9)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="desserts">
+        <h2 class="section-title">الحلويات والقوالب الفاخرة</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet dessert, cut in half showcasing rich layers, chocolate, cream, and sauce dripping temptingly. Cinematic dramatic lighting, studio background with soft smoke_.jpg"
+              alt="كعكة غاتوه جالاكسي البلجيكية"
+              class="product-img"
+            />
+            <h3>كعكة غاتوه جالاكسي البلجيكية</h3>
+            <p>
+              مزيج من الشوكولاتة البلجيكية الفاخرة مع طبقة مقرمشة غنية بالحليب.
+            </p>
+            <div class="card-footer">
+              <span class="price">17 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('كعكة غاتوه جالاكسي', 17)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet dessert, cut in half showcasing rich layers, chocolate, cream, and sauce dripping temptingly. Cinematic dramatic lighting, studio background with soft smoke_.jpg"
+              alt="شريحة تشيز كيك بالبلوبري"
+              class="product-img"
+            />
+            <h3>شريحة تشيز كيك بالبلوبري</h3>
+            <p>
+              قاعدة البسكويت المقرمشة مع طبقة الكريمة الغنية مغطاة بصوص التوت
+              البري.
+            </p>
+            <div class="card-footer">
+              <span class="price">22 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('تشيز كيك بلوبري', 22)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet dessert, cut in half showcasing rich layers, chocolate, cream, and sauce dripping temptingly. Cinematic dramatic lighting, studio background with soft smoke_.jpg"
+              alt="صحن كنافة ملكية بالقشطة"
+              class="product-img"
+            />
+            <h3>صحن كنافة ملكية بالقشطة</h3>
+            <p>كنافة شامية غنية بالقشطة الطازجة وقطرات الشيرة والمكسرات.</p>
+            <div class="card-footer">
+              <span class="price">20 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('صحن كنافة بالقشطة', 20)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="drinks">
+        <h2 class="section-title">المشروبات والقهوة المختصة</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet coffee drink and Pepsi beverage, showcasing rich coffee with foam or latte art, Pepsi with ice and condensation droplets. Cinematic dramatic lighting, studio.jpg"
+              alt="قهوة اليوم المختصة"
+              class="product-img"
+            />
+            <h3>قهوة اليوم المختصة</h3>
+            <p>محضرة بعناية من أجود محاصيل البن العربي لضبط المزاج.</p>
+            <div class="card-footer">
+              <span class="price">10 ر.س</span>
+              <button
+                class="add-btn"
+                onclick="addToCart('قهوة اليوم المختصة', 10)"
+              >
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet coffee drink and Pepsi beverage, showcasing rich coffee with foam or latte art, Pepsi with ice and condensation droplets. Cinematic dramatic lighting, studio.jpg"
+              alt="قهوة سعودية أصيلة"
+              class="product-img"
+            />
+            <h3>قهوة سعودية أصيلة</h3>
+            <p>
+              فنجان من القهوة السعودية الفاخرة المحضرة على أصولها مع الهيل
+              والزعفران.
+            </p>
+            <div class="card-footer">
+              <span class="price">7 ر.س</span>
+              <button class="add-btn" onclick="addToCart('قهوة سعودية', 7)">
+                إضافة
+              </button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img
+              src="./assets/image/Professional food photography of a gourmet coffee drink and Pepsi beverage, showcasing rich coffee with foam or latte art, Pepsi with ice and condensation droplets. Cinematic dramatic lighting, studio.jpg"
+              alt="شاي أحمر خادر"
+              class="product-img"
+            />
+            <h3>شاي أحمر خادر</h3>
+            <p>شاي أحمر ثقيل ومضبوط يُعدّل الرأس ومحضر على الجمر.</p>
+            <div class="card-footer">
+              <span class="price">6 ر.س</span>
+              <button class="add-btn" onclick="addToCart('شاي أحمر خادر', 6)">
+                إضافة
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>سلة طلباتك</h3>
+        <span id="closeCartBtn" class="close-cart">&times;</span>
+      </div>
+      <div id="cartItemsList" class="cart-items-list">
+        <p class="empty-msg" id="emptyCartMsg">
+          سلتك فارغة حالياً.. أضف بعض الوجبات اللذيذة!
+        </p>
+      </div>
+      <div class="cart-footer-box">
+        <div class="total-price">
+          <span>الإجمالي:</span>
+          <span id="totalAmount">0 ر.س</span>
+        </div>
+        <button
+          id="sendWhatsappBtn"
+          class="whatsapp-btn"
+          onclick="sendOrderToWhatsapp()"
+        >
+          تأكيد الطلب عبر الواتساب
+        </button>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
